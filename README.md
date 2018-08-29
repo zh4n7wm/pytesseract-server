@@ -25,6 +25,7 @@ Web 前端界面直接用了 [otiai10/ocrserver](https://github.com/otiai10/ocrs
 ## heroku 部署
 
     $ heroku buildpacks:add --index 1 https://github.com/heroku/heroku-buildpack-apt
+    $ heroku config:set TESSDATA_PREFIX=/app/.apt/usr/share/tesseract-ocr/tessdata
 
     $ cat Aptfile
     tesseract-ocr
