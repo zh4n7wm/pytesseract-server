@@ -21,3 +21,11 @@
 ## Web 前端
 
 Web 前端界面直接用了 [otiai10/ocrserver](https://github.com/otiai10/ocrserver)
+
+## heroku 部署
+
+    $ heroku buildpacks:add --index 1 https://github.com/heroku/heroku-buildpack-apt
+
+    $ cat Aptfile
+    tesseract-ocr
+    libtesseract-dev
